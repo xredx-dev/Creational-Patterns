@@ -6,4 +6,7 @@ data class Shoes(
     override var name: String,
     override var color: Color = Color.BLACK,
     override var department: Department = Department.HOME_AND_KITCHEN
-):Item(name, color, department)
+):Item(name, color, department) {
+    override val price: Double
+        get() = TODO("Not yet implemented")
+}
